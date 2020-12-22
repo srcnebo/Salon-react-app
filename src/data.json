@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "name": "Salong Namn",
+    "price": 120,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 2,
+    "name": "Sax & Fön",
+    "price": 320,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 3,
+    "name": "Hårizont",
+    "price": 320,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 4,
+    "name": "Hårhuset",
+    "price": 320,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 5,
+    "name": "Hair & Nu",
+    "price": 420,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 6,
+    "name": "Hårley Davidson",
+    "price": 420,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 7,
+    "name": "Tyo Huone",
+    "price": 520,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 8,
+    "name": "Kampaamo",
+    "price": 220,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 9,
+    "name": "Hiushuone",
+    "price": 520,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 10,
+    "name": "Hoitola",
+    "price": 120,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  },
+  {
+    "id": 11,
+    "name": "Hiustalo",
+    "price": 520,
+    "address": "Rådmansgatan 46, 113 57 Stockholm",
+    "phoneNumber": "08-522 389 20",
+    "webPage": "www.salongweb.se",
+    "appointment": "12.00",
+    "duration": 30,
+    "ratingsQuantity": 32,
+    "ratingsAverage": 4, 
+    "description":
+      "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+  }
+]

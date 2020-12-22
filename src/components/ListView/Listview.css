@@ -1,0 +1,46 @@
+.salon-list__item {
+  display: grid;
+  grid-template-columns: 45px auto 50px 22px;
+  grid-template-rows: 30px, repeat(2, 1rf);
+  width: 100%;
+  gap: 10px;
+  font-size: 0.94rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--lightGrey);
+}
+
+.salon-list__appointment {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin-top: 3px;
+}
+.salon-list__price {
+  margin-top: 3px;
+}
+
+.salong-list__rating {
+  display: flex;
+  align-items: center;
+}
+.salon-list__rating-text {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  padding: 3px;
+  color: var(--lightText);
+  font-weight: 300;
+}
+.salon-list__duration {
+  font-size: 0.8125rem;
+  color: var(--lightText);
+  font-weight: 300;
+}
+.salon-list__arrow {
+  grid-row: 1/4;
+  grid-column: 4/5;
+  align-self: center;
+}
+
+.salon-list__address {
+  color: var(--lightText);
+  font-weight: 300;
+}
