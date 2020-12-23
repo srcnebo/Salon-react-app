@@ -1,4 +1,4 @@
-# Getting Started
+# The Salon react app
 
 This is a demo project of The Salon interface.
 In the interface the interactive elements include list of salons and the back arrow on the individual salon page
