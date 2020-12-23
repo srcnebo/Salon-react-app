@@ -3,7 +3,7 @@
 }
 
 .mobile-view-wrapper {
-  max-width: 414px;
+  max-width: 480px;
   margin: auto;
   border: 0.5px solid var(--lightGrey);
 }
