@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "5fe241c5727776b731d77bdb",
     "name": "Salong Namn",
     "price": 120,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -8,13 +8,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 2,
+    "id": "5fe241c5271070a3c35bb3dc",
     "name": "Sax & Fön",
     "price": 320,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -22,13 +24,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 3,
+    "id": "5fe241c57a482995d0260d1c",
     "name": "Hårizont",
     "price": 320,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -36,13 +40,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 4,
+    "id": "5fe241c5c48b11c9b65daf2a",
     "name": "Hårhuset",
     "price": 320,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -50,13 +56,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 5,
+    "id": "5fe241c59b9023032b0d38ef",
     "name": "Hair & Nu",
     "price": 420,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -64,13 +72,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 6,
+    "id": "5fe241c575aaa5e295bf82dd",
     "name": "Hårley Davidson",
     "price": 420,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -78,13 +88,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 7,
+    "id": "5fe241c5fc86c7ec56eaa8d7",
     "name": "Tyo Huone",
     "price": 520,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -92,13 +104,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 8,
+    "id": "5fe241c589be1b8c1283318f",
     "name": "Kampaamo",
     "price": 220,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -106,13 +120,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 9,
+    "id": "5fe241c51d786e11f78f192f",
     "name": "Hiushuone",
     "price": 520,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -120,13 +136,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 10,
+    "id": "5fe2431df810a96aca2827a6",
     "name": "Hoitola",
     "price": 120,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -134,13 +152,15 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":
       "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
   },
   {
-    "id": 11,
+    "id": "5fe2431d603546cd41b5153a",
     "name": "Hiustalo",
     "price": 520,
     "address": "Rådmansgatan 46, 113 57 Stockholm",
@@ -148,6 +168,8 @@
     "webPage": "www.salongweb.se",
     "appointment": "12.00",
     "duration": 30,
+    "startTime": "9:00",
+    "endTime": "19:00",
     "ratingsQuantity": 32,
     "ratingsAverage": 4, 
     "description":

@@ -5,7 +5,7 @@ import './Dropdown.css';
 
 function Dropdown({ title, currency, items, setfilterValue }) {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState('-');
+  const [selected, setSelected] = useState('--');
 
   const ref = useRef();
   const toggleDropdown = () => setOpen(!open);

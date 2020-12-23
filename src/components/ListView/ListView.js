@@ -1,64 +1,55 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Rating from '@material-ui/lab/Rating';
-import { withStyles } from '@material-ui/core/styles';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
-import { ReactComponent as ArrowRightIcon } from '../../assets/icons/arrow-right.svg';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import salonData from '../../data.json';
+import NavBar from '../NavBar/NavBar';
+import Filter from '../Filter/Filter';
+import ListItem from '../ListItem/ListItem';
+import './ListView.css';
+function ListView({ setSalon }) {
+  const [filterValue, setfilterValue] = useState('');
+  const [filteredSalon, setFilteredSalon] = useState([]);
 
-import './Listview.css';
+  const history = useHistory();
+  useEffect(() => {
+    let filteredSalons = salonData;
 
-const StyledRating = withStyles({
-  iconFilled: {
-    color: 'var(--primary)',
-  },
-  iconEmpty: {
-    color: 'var(--primary)',
-  },
-})(Rating);
+    if (filterValue === '--') {
+      filteredSalons = filteredSalons.filter((salon) => salon);
+    }
+    if (filterValue === '0 - 249') {
+      filteredSalons = filteredSalons.filter(
+        (salon) => salon.price > 0 && salon.price < 250
+      );
+    }
+    if (filterValue === '250 - 500') {
+      filteredSalons = filteredSalons.filter(
+        (salon) => salon.price >= 250 && salon.price <= 500
+      );
+    }
+    if (filterValue === '501 - 2000') {
+      filteredSalons = filteredSalons.filter(
+        (salon) => salon.price > 500 && salon.price <= 2000
+      );
+    }
 
-function ListView(props) {
-  const {
-    id,
-    name,
-    price,
-    address,
-    duration,
-    appointment,
-    ratingsQuantity,
-    ratingsAverage,
-  } = props.salon;
+    setFilteredSalon(filteredSalons);
+  }, [filterValue]);
 
   return (
-    <div className='salon-list__item'>
-      <div className='salon-list__appointment'>
-        <span>{appointment}</span>
-      </div>
-      <h2 className='salon-list__name'>{name}</h2>
-      <div className='salon-list__price'>
-        {price}
-        <span>kr</span>
-      </div>
-      <div className='salon-list__arrow'>
-        <span>
-          <ArrowRightIcon />
-        </span>
-      </div>
-      <div className='salong-list__rating'>
-        <StyledRating
-          readOnly
-          name='customized-empty'
-          defaultValue={ratingsAverage}
-          precision={1}
-          size='small'
-          emptyIcon={<StarBorderIcon fontSize='inherit' />}
-        />
-        <span className='salon-list__rating-text'>{`(${ratingsQuantity})`}</span>
-      </div>
-      <div className='salon-list__duration'>
-        <span>{duration}mins</span>
-      </div>
-      <div className='salon-list__address'>
-        <span>{address.split(',')[0]}</span>
+    <div>
+      <NavBar />
+      <Filter setfilterValue={setfilterValue} />
+      <div className='salon-list'>
+        {filteredSalon.map((salon, idx) => (
+          <div
+            onClick={() => {
+              setSalon(salon);
+              history.push(`/salons/${salon.id}`);
+            }}
+            key={`${salon.name}_${idx}`}>
+            <ListItem salon={salon} />
+          </div>
+        ))}
       </div>
     </div>
   );

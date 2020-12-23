@@ -3,7 +3,7 @@ import Dropdown from '../Dropdown/Dropdown';
 
 import PropTypes from 'prop-types';
 
-const items = ['0 - 249', '250 - 500', '501 - 2000'];
+const items = ['--', '0 - 249', '250 - 500', '501 - 2000'];
 
 function Filter({ setfilterValue }) {
   return (

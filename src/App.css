@@ -1,3 +1,9 @@
-.salon-list {
-  padding: 10px 15px;
+* {
+  box-sizing: border-box;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
 }
