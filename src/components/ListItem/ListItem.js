@@ -47,7 +47,8 @@ function ListItem(props) {
         <StyledRating
           readOnly
           name='customized-empty'
-          defaultValue={ratingsAverage}
+          value={ratingsAverage}
+          defaultValue={1}
           precision={1}
           size='small'
           emptyIcon={<StarBorderIcon fontSize='inherit' />}

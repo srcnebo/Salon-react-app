@@ -40,8 +40,6 @@ const StyledRating = withStyles({
   },
 })(Rating);
 
-//Todo : fetch salon if no salon is passed
-
 function SingleView({ match, salon, history }) {
   // State and change handler for Material Ui tabs
   const [value, setValue] = useState(0);
@@ -49,78 +47,101 @@ function SingleView({ match, salon, history }) {
     setValue(newValue);
   };
 
+  const [currentSalon, setCurrentSalon] = useState({});
+
+  // If salon is not an empty object, set it as current salon
+  // Else search through the salon array and find the salon with matching Id
+  useEffect(() => {
+    if (Object.keys(salon).length === 0) {
+      const foundSalon = salonData.find(
+        (salon) => salon.id === match.params.id
+      );
+      setCurrentSalon(foundSalon);
+    } else {
+      setCurrentSalon(salon);
+    }
+  }, [salon, match.params.id]);
+
   // Go back to List of Salons
   const handleGoBack = () => {
     history.push('/');
   };
 
-  console.log(salonData);
   return (
-    <div>
-      <div className='single-salon__header'>
-        <div className='single-salon__header-controls'>
-          <div onClick={handleGoBack}>
-            <ArrowBack />
-          </div>
-          <div>
-            <Like />
-          </div>
-        </div>
-        <img
-          src={salonImage}
-          alt='female hair'
-          className='single-salon__header-image'
-        />
-        <div className='single-salon__header-info'>
-          <h1>{salon.name}</h1>
-          <div className='single-salon__rating'>
-            <StyledRating
-              readOnly
-              name='customized-empty'
-              defaultValue={salon.ratingsAverage}
-              precision={1}
-              size='small'
-              emptyIcon={<StarBorderIcon fontSize='inherit' />}
+    <>
+      {currentSalon && (
+        <div>
+          <div className='single-salon__header'>
+            <div className='single-salon__header-controls'>
+              <div onClick={handleGoBack}>
+                <ArrowBack />
+              </div>
+              <div>
+                <Like />
+              </div>
+            </div>
+            <img
+              src={salonImage}
+              alt='female hair'
+              className='single-salon__header-image'
             />
-            <span className='single-salon__rating-text'>{`(${salon.ratingsQuantity})`}</span>
+            <div className='single-salon__header-info'>
+              <h1>{currentSalon.name}</h1>
+              <div className='single-salon__rating'>
+                <StyledRating
+                  readOnly
+                  name='customized-empty'
+                  value={
+                    currentSalon.ratingsAverage
+                      ? currentSalon.ratingsAverage
+                      : 0
+                  }
+                  defaultValue={1}
+                  precision={1}
+                  size='small'
+                  emptyIcon={<StarBorderIcon fontSize='inherit' />}
+                />
+                <span className='single-salon__rating-text'>{`(${currentSalon.ratingsQuantity})`}</span>
+              </div>
+            </div>
+          </div>
+
+          <Paper square>
+            <StyledTabs
+              value={value}
+              variant='fullWidth'
+              onChange={handleChange}
+              aria-label='disabled tabs example'>
+              <Tab label='Info' />
+              <Tab label='Schema' />
+            </StyledTabs>
+          </Paper>
+          <div className='single-salon__spacer'></div>
+          <div className='single-salon__body'>
+            <div className='single-salon__body-info'>
+              <Pin />
+              <span>{currentSalon.address}</span>
+            </div>
+            <div className='single-salon__body-info'>
+              <Clock />
+              <span>Öppet till {currentSalon.endTime} idag</span>
+              <ArrowDown />
+            </div>
+            <div className='single-salon__body-info'>
+              <Phone />
+              <span>{currentSalon.phoneNumber}</span>
+            </div>
+            <div className='single-salon__body-info'>
+              <Globe />
+              <span>{currentSalon.webPage}</span>
+            </div>
+            <div className='single-salon__body-description'>
+              <p>{currentSalon.description}</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <Paper square>
-        <StyledTabs
-          value={value}
-          variant='fullWidth'
-          onChange={handleChange}
-          aria-label='disabled tabs example'>
-          <Tab label='Info' />
-          <Tab label='Schema' />
-        </StyledTabs>
-      </Paper>
-      <div className='single-salon__spacer'></div>
-      <div className='single-salon__body'>
-        <div className='single-salon__body-info'>
-          <Pin />
-          <span>{salon.address}</span>
-        </div>
-        <div className='single-salon__body-info'>
-          <Clock />
-          <span>Öppet till {salon.endTime} idag</span>
-          <ArrowDown />
-        </div>
-        <div className='single-salon__body-info'>
-          <Phone />
-          <span>{salon.phoneNumber}</span>
-        </div>
-        <div className='single-salon__body-info'>
-          <Globe />
-          <span>{salon.webPage}</span>
-        </div>
-        <div className='single-salon__body-description'>
-          <p>{salon.description}</p>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
 
