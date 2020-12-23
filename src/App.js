@@ -8,26 +8,28 @@ function App() {
   const [selectedSalon, setSelectedSalon] = useState({});
 
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          path='/'
-          exact
-          render={(props) => (
-            <ListView {...props} setSalon={setSelectedSalon} />
-          )}
-        />
-        <Route
-          path='/salons/:id'
-          exact
-          render={(props) => <SingleView {...props} salon={selectedSalon} />}
-        />
-        <Route
-          path='/'
-          render={() => <h1 className='not-found'>404: Page not found</h1>}
-        />
-      </Switch>
-    </BrowserRouter>
+    <div className='mobile-view-wrapper'>
+      <BrowserRouter>
+        <Switch>
+          <Route
+            path='/'
+            exact
+            render={(props) => (
+              <ListView {...props} setSalon={setSelectedSalon} />
+            )}
+          />
+          <Route
+            path='/salons/:id'
+            exact
+            render={(props) => <SingleView {...props} salon={selectedSalon} />}
+          />
+          <Route
+            path='/'
+            render={() => <h1 className='not-found'>404: Page not found</h1>}
+          />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 

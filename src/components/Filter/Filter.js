@@ -18,6 +18,8 @@ function Filter({ setfilterValue }) {
   );
 }
 
-Filter.propTypes = {};
+Filter.propTypes = {
+  setfilterValue: PropTypes.func,
+};
 
 export default Filter;

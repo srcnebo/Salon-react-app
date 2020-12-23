@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import salonData from '../../data.json';
 import NavBar from '../NavBar/NavBar';
@@ -55,6 +56,8 @@ function ListView({ setSalon }) {
   );
 }
 
-ListView.propTypes = {};
+ListView.propTypes = {
+  setSalon: PropTypes.func,
+};
 
 export default ListView;

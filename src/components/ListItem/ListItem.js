@@ -65,6 +65,8 @@ function ListItem(props) {
   );
 }
 
-ListItem.propTypes = {};
+ListItem.propTypes = {
+  salon: PropTypes.object,
+};
 
 export default ListItem;

@@ -20,6 +20,7 @@ import { ReactComponent as Globe } from '../../assets/icons/globe.svg';
 import salonImage from '../../assets/images/hair.jpg';
 import './SingleView.css';
 
+//Styling Material Ui component using withStyles HOC
 const StyledTabs = withStyles({
   indicator: {
     backgroundColor: 'var(--primary)',
@@ -29,8 +30,6 @@ const StyledTabs = withStyles({
     color: 'var(--darkText)',
   },
 })(Tabs);
-
-//Styling Material Ui component using withStyles HOC
 const StyledRating = withStyles({
   iconFilled: {
     color: 'var(--primary)',
@@ -49,8 +48,8 @@ function SingleView({ match, salon, history }) {
 
   const [currentSalon, setCurrentSalon] = useState({});
 
-  // If salon is not an empty object, set it as current salon
-  // Else search through the salon array and find the salon with matching Id
+  // If {salon} is empty search through the salonData array and find the salon with matching Id.
+  // Else set salon to currentSalon state. This is in the case one reloads a single salon view.
   useEffect(() => {
     if (Object.keys(salon).length === 0) {
       const foundSalon = salonData.find(
@@ -145,6 +144,16 @@ function SingleView({ match, salon, history }) {
   );
 }
 
-SingleView.propTypes = {};
+SingleView.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  }),
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }),
+  salon: PropTypes.object,
+};
 
 export default withRouter(SingleView);
