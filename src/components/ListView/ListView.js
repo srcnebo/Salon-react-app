@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar';
 import Filter from '../Filter/Filter';
 import ListItem from '../ListItem/ListItem';
 import './ListView.css';
+
 function ListView({ setSalon }) {
   const [filterValue, setfilterValue] = useState('');
   const [filteredSalon, setFilteredSalon] = useState([]);
