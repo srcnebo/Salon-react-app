@@ -1,0 +1,64 @@
+.single-salon__header {
+  position: relative;
+}
+
+.single-salon__header-controls {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60px;
+  align-items: center;
+}
+.single-salon__header-controls > div {
+  padding: 15px;
+}
+
+.single-salon__header-image {
+  width: 100%;
+}
+
+.single-salon__header-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000000cc;
+  background: linear-gradient(0deg, #000000, #00000009);
+  color: var(--white);
+  padding: 22px 15px;
+}
+.single-salon__header-info > h1 {
+  color: var(--white);
+}
+.single-salon__rating {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.single-salon__rating-text {
+  margin-left: 5px;
+}
+.single-salon__spacer {
+  background-color: #f9f9f9;
+  height: 20px;
+}
+.single-salon__body {
+  padding: 0 15px 15px;
+  color: var(--darkText);
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+.single-salon__body-info {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--lightGrey);
+  display: flex;
+  align-items: center;
+}
+.single-salon__body-info > span {
+  margin: 0 15px;
+}
+.single-salon__body-description > p {
+  line-height: 1.47;
+}

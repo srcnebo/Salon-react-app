@@ -1,15 +1,17 @@
 import React, { useState, useRef } from 'react';
 import { useOutsideClick } from '../../hooks';
 import { ReactComponent as ArrowDownIcon } from '../../assets/icons/arrow-down.svg';
+import PropTypes from 'prop-types';
 import './Dropdown.css';
 
 function Dropdown({ title, currency, items, setfilterValue }) {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState('-');
+  const [selected, setSelected] = useState('--');
 
   const ref = useRef();
   const toggleDropdown = () => setOpen(!open);
 
+  // Handle click outside dropdown
   useOutsideClick(ref, () => {
     setOpen(false);
   });
@@ -54,5 +56,12 @@ function Dropdown({ title, currency, items, setfilterValue }) {
     </div>
   );
 }
+
+Dropdown.propTypes = {
+  setfilterValue: PropTypes.func,
+  title: PropTypes.string,
+  currency: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.string),
+};
 
 export default Dropdown;
